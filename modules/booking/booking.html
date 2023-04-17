@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reserva de Viajes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+  </head>
+  <body>
+    <header>
+      <h1>Reserva de Viajes</h1>
+    </header>
+    <main>
+      <div class="reserva-viaje">
+        <h2>Reservar Viaje</h2>
+        <form>
+          <label for="destino">Destino:</label>
+          <select id="destino" name="destino">
+            <option value="la-habana">La Habana</option>
+            <option value="varadero">Varadero</option>
+            <option value="trinidad">Trinidad</boption>
+            <option value="santiago-de-cuba">Santiago de Cuba</option>
+          </select>
+
+          <label for="fecha-entrada">Fecha de entrada:</label>
+          <input type="date" id="fecha-entrada" name="fecha-entrada">
+
+          <label for="fecha-salida">Fecha de salida:</label>
+          <input type="date" id="fecha-salida" name="fecha-salida">
+
+          <label for="cantidad-personas">Cantidad de personas:</label>
+          <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" max="10">
+
+          <!-- <label for="disponibilidad">Disponibilidad:</label>
+          <select id="disponibilidad" name="disponibilidad">
+            <option value="disponible">Disponible</option>
+            <option value="no-disponible">No disponible</option>
+          </select> -->
+
+          <!-- <label for="monto-pagar">Monto a pagar:</label>
+          <input type="text" id="monto-pagar" name="monto-pagar"> -->
+
+          <input type="submit" value="Reservar">
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Derechos Reservados &copy; 2023</p>
+    </footer>
+  </body>
+</html>
